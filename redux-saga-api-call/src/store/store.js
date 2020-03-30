@@ -7,7 +7,9 @@ import reducer from '../reducers/reducer'
 const sagaMiddleware = createSagaMiddleware();
 
 // mount it on the Store
-export default createStore(reducer, applyMiddleware(sagaMiddleware));
+const store = createStore(reducer, applyMiddleware(sagaMiddleware));
+
+export default store;
 
 // then run the saga
 sagaMiddleware.run(mySaga);

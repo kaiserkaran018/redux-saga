@@ -4,11 +4,6 @@ import { requestApiData } from '../actions/action';
 import * as _ from 'lodash';
 
 class Home extends Component {
-    constructor() {
-        super()
-        this.state = {
-        }
-    }
 
     componentDidMount() {
         this.props.requestApiData();
@@ -68,6 +63,6 @@ const mapDispatchToProps = dispatch => ({
     requestApiData: () => {
         dispatch(requestApiData())
     }
-})
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
