@@ -31,7 +31,7 @@ class Home extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {!_.isEmpty(this.props.apiData) && this.props.apiData.map( data => 
+                            {!_.isEmpty(this.props.apiData) && this.props.apiData.map( data =>
                             <tr key={data.id}>
                                 <td>
                                     {data.id}
