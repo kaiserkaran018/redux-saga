@@ -13,7 +13,6 @@ const Search = (props) => {
         console.log('value', value);
     }
 
-
     return (
         <div>
             <input type='number' id='getId' />

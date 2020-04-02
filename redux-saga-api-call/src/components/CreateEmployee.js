@@ -13,7 +13,11 @@ const CreateEmployee = (props) => {
     let [value, setValue] = useState('');
 
     const handleOnClick = () => {
-        setValue(value = {name: document.getElementById('name').value, salary: document.getElementById('salary').value, age: document.getElementById('age').value});
+        setValue(value = {
+            name: document.getElementById('name').value,
+            salary: document.getElementById('salary').value,
+            age: document.getElementById('age').value
+        });
         requestEmployeeCreate(value);
     }
 

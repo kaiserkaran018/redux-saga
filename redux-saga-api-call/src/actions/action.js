@@ -21,6 +21,6 @@ export const recieveEmployeeCreate = data => ({ type: RECIEVE_CREATE_EMPLOYEE, d
 // action for request update an user data
 export const requestUserDataUpdate = id => ({ type: REQUEST_UPDATE_USER_DATA, id });
 
-//action for recieve update an user data
+//action for recieve update an user data 
 export const recieveUserDataUpdate = data => ({ type: RECIEVE_UPDATE_USER_DATA, data });
 

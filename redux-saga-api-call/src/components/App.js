@@ -46,7 +46,6 @@ const App = (props) => {
                     )}
                 </tbody>
             </table>
-
         </div>
     )
 }
