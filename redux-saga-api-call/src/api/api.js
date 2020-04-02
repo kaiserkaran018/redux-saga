@@ -1,5 +1,4 @@
 export const fetchData = async () => {
-
     let api = 'http://dummy.restapiexample.com/api/v1/employees';
     try {
         const response = await fetch(api);
@@ -8,12 +7,10 @@ export const fetchData = async () => {
     } catch (e) {
         console.log(e);
     }
-
 };
 
 
 export const fetchDataById = async (id) => {
-
     let api = `http://dummy.restapiexample.com/api/v1/employee/${id}`;
     try {
         const response = await fetch(api);
@@ -22,11 +19,9 @@ export const fetchDataById = async (id) => {
     } catch (e) {
         console.log(e);
     }
-
 };
 
 export const createEmployee = async(data) => {
-
     let api = `http://dummy.restapiexample.com/api/v1/create`;
     const post = {
         method: 'POST',
@@ -40,7 +35,4 @@ export const createEmployee = async(data) => {
     } catch (e) {
         console.log(e);
     }
-
 };
-
-

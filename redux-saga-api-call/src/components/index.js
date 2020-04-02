@@ -51,6 +51,3 @@ export default class index extends Component {
         )
     }
 }
-
-
-

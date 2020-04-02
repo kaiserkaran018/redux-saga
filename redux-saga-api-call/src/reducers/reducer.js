@@ -1,6 +1,8 @@
 import { RECEIVE_API_DATA, RECEIVE_API_DATA_BY_ID, RECIEVE_CREATE_EMPLOYEE, RECIEVE_UPDATE_USER_DATA } from '../action-types/action-type'
 
-const intialState = {data: []};
+const intialState = {
+    data: []
+};
 
 export default (state = intialState, { type, data }) => {
     switch (type) {

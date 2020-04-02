@@ -7,8 +7,8 @@ function* getAllData() {
     try {
         const data = yield call(fetchData);
         yield put(receiveApiData(data));
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        console.log(error);
     }
 }
 
@@ -16,8 +16,8 @@ function* getDataById(id) {
     try {
         const data = yield call(fetchDataById, id.id);
         yield put(recieveDataById(data));
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        console.log(error);
     }
 }
 
@@ -25,8 +25,8 @@ function* createEmployees(userData) {
     try {
         const data = yield call(createEmployee, userData);
         yield put(recieveEmployeeCreate(data));
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        console.log(error);
     }
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import App from './components/index'
+import Home from './components/index';
 import store from './store/store'
 
 render(<Provider store={store}>
-    <App />
+    <Home />
 </Provider>, document.getElementById('root'));

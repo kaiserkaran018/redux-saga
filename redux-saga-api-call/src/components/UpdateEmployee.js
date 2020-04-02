@@ -7,15 +7,12 @@ const  UpdateEmployee = (props) => {
 
     useEffect(() => props.requestApiData(), []);
 
-    console.log(props, 'props in update page');
-
     return (
         <div>
             In Update
         </div>
     )
 }
-
 
 const mapStateToProps = state => ({
     updatedData:  _.get(state, 'updatedData.data', []),
